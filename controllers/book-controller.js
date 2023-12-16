@@ -1,4 +1,4 @@
-const { BookModel, UserModel } = require("../models/index");
+const { UserModel, BookModel } = require("../models");
 
 // const getAllBooks =  () => {};
 // const getSingleBookById =  () => {};
@@ -39,7 +39,7 @@ exports.getAllBooks =  async(req, res) => {
 // });
 exports.getSingleBookById =  async(req, res) => {
     const { id } = req.params;
-    const book = await Bookmodel.findById(id);
+    const book = await BookModel.findById(id);
 
     
   if (!book) {
@@ -85,13 +85,11 @@ exports.getSingleBookById =  async(req, res) => {
 //   });
 
 exports.getAllIssuedBooks = async(req, res) => {
-        const users = await Usermodel.find({
+        const users = await UserModel.find({
             issuedBook :{$exists : true}
         }).populate("issuedBook");
 
         // DTO --- DATA TRANSFER OBJECT
-
-       // const issuedBooks = users.map((each) = > new issuedBook(each))
 
             if (issuedBooks.length === 0) {
               return res.status(404).json({

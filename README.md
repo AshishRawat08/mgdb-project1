@@ -27,12 +27,14 @@ Foreign key :
 users table                                  books table  (base table)
 issuedBook : 2(Foreign key)                issuedBook : 2 (Priamry key)
 
+DTO ( DATA TRANSFER OBJECT)
+var obj1  : {
+    name 
+    age
+    gender
+}
+wanna transfer data from one object to another  { obj1(main) to obj2 }
 
+var obj2 : {
 
-
-
-
-
-
-
-
+}
