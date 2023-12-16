@@ -4,7 +4,7 @@
 MVC  Arch => controllers
 >> M : Model - Its depicts the structure of mongodb collection  ( Combination of view and controller) 
 >> V : View - Its is handle by reactjs (write in frontend (reactjs))
->> C : Controller - Brain or logical partof a route ...it is rspct to bckend part
+>> C : Controller - Brain or logical part of a route ...it is rspct to bckend part
             >> books.controller.js
             >> users.controller.js
 
@@ -38,3 +38,8 @@ wanna transfer data from one object to another  { obj1(main) to obj2 }
 var obj2 : {
 
 }
+
+# constructor 
+whenever we create a obj constructor is auto called and it does not have returntype
+1. default constructorName()
+2. parameterized constructorName(parameter)
