@@ -1,6 +1,8 @@
 const { UserModel, BookModel } = require("../models");
 const issuedBook = require("../dtos/book-dto");
-const bookModel = require("../models/book-model");
+
+
+// const bookModel = require("../models/book-model"); 
 
 // const getAllBooks =  () => {};
 // const getSingleBookById =  () => {};
