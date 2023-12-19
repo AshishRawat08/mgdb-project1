@@ -10,15 +10,15 @@ class IssuedBook{      // clasname should always be start with uppercase
     returnDate;
 
 // whenever we create obj, the  constructor gets invoked(called)   
-constructor(user){
-    this._id = user.IssuedBook._id;
-    this.name = user.IssuedBook.name;
-    this.genre = user.IssuedBook.genre;
-    this.price = user.IssuedBook.price;
-    this.publisher = user.IssuedBook.publisher;
-    this.issuedBy = user.IssuedBook.issuedBy;
-    this.issuedDate = user.IssuedBook.issuedDate;
-    this.returnDate = user.IssuedBook.returnDate;
-}    
+constructor(user) {
+    this._id = user.issuedBook._id;
+    this.name = user.issuedBook.name;
+    this.genre = user.issuedBook.genre;
+    this.price = user.issuedBook.price;
+    this.publisher = user.issuedBook.publisher;
+    this.issuedBy = user.issuedBy;
+    this.issuedDate = user.issuedDate;
+    this.returnDate = user.returnDate;
+  }    
 }
 module.exports = IssuedBook;

@@ -1,8 +1,8 @@
 const express = require("express");
-const { users } = require("../data/users.json");
 const { getAllUsers, getSingleUserById, deleteUser, updateUserdata, createNewUser, getSubscriptionDetailsById } = require("../controllers/user-controller");
+const { users } = require("../data/users.json");
 
-const {BookModel, UserModel} = require("../models/index")
+const { UserModel, BookModel } = require("../models");
 const router = express.Router();
 
 
@@ -21,7 +21,7 @@ const router = express.Router();
 //     data: users,
 //   });
 // });
-router.get("/", getAllUsers);  // for DB
+router.get("/", getAllUsers);         // for DB
 
 
 
@@ -54,6 +54,14 @@ router.get("/", getAllUsers);  // for DB
 
 
 router.get("/:id", getSingleUserById);
+
+
+
+
+
+
+
+
 
 /**
  * Route: /
@@ -91,6 +99,15 @@ router.post("/", createNewUser);
 //     data: users,
 //   });
 // });
+
+
+
+
+
+
+
+
+
 
 /**
  * Route: /:id
